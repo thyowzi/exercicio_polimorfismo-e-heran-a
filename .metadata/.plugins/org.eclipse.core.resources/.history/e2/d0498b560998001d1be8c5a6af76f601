@@ -1,0 +1,16 @@
+package application;
+
+import entities.BusinesssAccoount;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		
+		BusinesssAccoount account = new BusinesssAccoount();
+		account.getNumber();
+		System.out.println(account);
+		
+	}
+
+}

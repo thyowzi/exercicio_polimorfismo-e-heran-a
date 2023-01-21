@@ -1,0 +1,40 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);	
+		
+		System.out.println("Enter the number of products: ");
+		int n = sc.nextInt();
+		for(int i = 0; i < n; i++) {
+			System.out.println("Commom, used or imported (c/u/i)");
+			char caracter = sc.next().charAt(0);
+			switch (caracter) {
+			case 'c':
+				System.out.print("Name: ");
+				sc.nextLine();
+				String name = sc.nextLine();
+				System.out.print("Price: ");
+				double priceP = sc.nextDouble();	
+				Product pro = new Product(name, priceP);
+				System.out.println(pro);
+				break;
+			case 'u':
+				System.out.print("Name: ");
+				sc.nextLine();
+				String namep2 = sc.nextLine();
+				System.out.print("Price: ");
+				double priceP2 = sc.nextDouble();
+			}
+		}
+		
+		
+		
+	}
+
+}

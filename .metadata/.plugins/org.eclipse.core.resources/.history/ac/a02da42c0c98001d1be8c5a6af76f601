@@ -1,0 +1,28 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.BusinesssAccoount;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		BusinesssAccoount account = new BusinesssAccoount();
+		
+		System.out.println("Qual valor deseja depositar?");
+		double deposit = sc.nextDouble();
+		account.deposit(deposit);
+		System.out.println(account.toString());
+		System.out.println();
+		System.out.println("Quanto deseja sacar?");
+		double saque = sc.nextDouble();
+		account.withdraw(saque);
+		System.out.println(account.toString());
+		
+	}
+
+}

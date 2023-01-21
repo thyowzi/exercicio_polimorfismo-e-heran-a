@@ -1,0 +1,21 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Account;
+import entities.SavingsAccount;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		Account acc = new Account(1001, "Alex", 500.00);
+		
+		
+		acc.deposit(sc.nextDouble());
+		
+	}
+
+}

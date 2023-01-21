@@ -1,0 +1,19 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.BusinesssAccoount;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double deposit = sc.nextDouble();
+		BusinesssAccoount account = new BusinesssAccoount();
+		
+		account.deposit(deposit);
+		
+	}
+
+}
